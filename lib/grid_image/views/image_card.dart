@@ -24,8 +24,10 @@ class SelectCard extends StatelessWidget {
               child: Image.asset("assets/images/image-preview.jpg")),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-          child: Text(gridImageDataModel.title, textAlign: TextAlign.center),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: Text(gridImageDataModel.title, textAlign: TextAlign.left,
+          // overflow: TextOverflow.ellipsis,
+          ),
         )
       ],
     );
